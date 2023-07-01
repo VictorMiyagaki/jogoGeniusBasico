@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: blue;
+}
+
+.fundoRosa {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(223, 8, 194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#cliqueAqui {
+    animation: piscando 1s infinite linear alternate;
+}
+
+@keyframes piscando {
+    from {
+        color: white;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+.circuloPreto {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.botao {
+    width: 230px;
+    height: 230px;
+    margin: 5px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.circuloPretoMenor {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+.verdeClaro {
+    color: rgb(128, 199, 46);
+}
+
+.botaoAnimado {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.esconder {
+    visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+    .circuloPreto {
+        width: 300px;
+        height: 300px;
+        border: 4px solid black;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .botao {
+        width: 142px;
+        height: 142px;
+        border-radius: 20px;
+        font-size: medium;
+        margin: 2px;
+    }
+
+    .circuloPretoMenor {
+        font-size: 0.5rem;
+    }
+}
